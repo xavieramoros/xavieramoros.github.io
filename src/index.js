@@ -19,4 +19,4 @@ $(function() {
   for(i = 0; i < accordions.length; i++) {
     makeAccordion(accordions[i]);
   }
-}
+});

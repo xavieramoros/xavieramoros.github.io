@@ -1,4 +1,16 @@
 
+// class Accordion{
+//   constuctor(){
+//     var targets, currentTarget, i;
+//     targets = accordion.querySelectorAll('.Accordion > dt');
+
+//   },
+
+//   toggle(){
+
+//   }
+// }
+
 // Using a function helps isolate each accordion from the others
 export default function makeAccordion(accordion) {
   var targets, currentTarget, i;
