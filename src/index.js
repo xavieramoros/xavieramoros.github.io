@@ -20,10 +20,12 @@ if (document.querySelectorAll && document.body.classList){
   }
 
   //accordion.addSection('Section 4 (NEW)','This is the new section body');  
-
-  setTimeout(fetchNewSection, 1000);  
+  setTimeout(fetchNewSection, 5000);  
 }
 
+/*
+Add new section using AJAX
+*/
 function fetchNewSection(){
   console.log("FETCH new section!")
 
