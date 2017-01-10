@@ -28,7 +28,7 @@ function fetchNewSection(){
   console.log("FETCH new section!")
 
   //insert new section using Ajax
-  fetch('xavieramoros.github.io/newsection.json', {
+  fetch('https://xavieramoros.github.io/newsection.json', {
     method: 'get'
   }).then(function(response) {
     var newSection = JSON.parse(response)
