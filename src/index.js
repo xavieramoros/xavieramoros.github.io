@@ -28,12 +28,12 @@ Add new section using AJAX
 */
 function fetchNewSection(){
   console.log("FETCH new section!")
-
   //insert new section using Ajax
   fetch('https://xavieramoros.github.io/newsection.json', {
-    method: 'get'
+    method: 'get',
   }).then(function(response) {
-    var newSection = JSON.parse(response)
+    return response.json();
+  }).then(function(newSection) {
     accordion.addSection( newSection.title , newSection.body );  
   }).catch(function(err) {
     console.log('Something went wrong fetching new section. err:',err)
