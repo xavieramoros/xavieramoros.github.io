@@ -34,7 +34,7 @@ function fetchNewSection(){
     var newSection = JSON.parse(response)
     accordion.addSection( newSection.title , newSection.body );  
   }).catch(function(err) {
-    console.log('Something went wrong fetching new section')
+    console.log('Something went wrong fetching new section. err:',err)
   });  
 }
 
